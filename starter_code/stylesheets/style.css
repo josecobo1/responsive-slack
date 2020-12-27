@@ -1,7 +1,65 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+body nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 50px;
+  border-bottom: solid 1px #ebebeb;
+}
+body nav img {
+  width: 180px;
+}
+body nav ul {
+  display: none;
+}
+body nav .fas.fa-bars {
+  font-size: 50px;
+  color: #6d6f7a;
+}
+body nav .fas.fa-times {
+  display: none;
+}
+body header {
+  margin-left: 50px;
+}
+body header h1 {
+  width: 350px;
+  width: 350px;
+  font-size: 62px;
+  color: #323747;
+}
+body header p {
+  font-size: 34px;
+  width: 595px;
+  color: #5b5e6c;
+}
+body header button {
+  background-color: #4049aa;
+  width: 80%;
+  color: white;
+  font-size: 34px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+}
+body main .clients img {
+  width: 100%;
+  padding: 30px 0px;
+  border-bottom: solid 1px #ebebeb;
+}
+body main .try {
+  text-align: center;
+}
+body main .try .title {
+  font-weight: bold;
+  font-size: 40px;
+}
+body main .try p {
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
