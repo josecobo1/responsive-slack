@@ -1,3 +1,8 @@
+@mixin footer-link-list {
+  list-style: none;
+  color: #6d6f7a;
+}
+
 body {
   nav {
     display: flex;
@@ -71,13 +76,121 @@ body {
           .title{
             font-weight: bold;
             font-size: 40px;
+            margin-top: 60px;
+            margin-bottom: 10px;
           }
 
-          p{
-              margin-top: 5px;
+          p:nth-child(2) {
+            margin-top: 10px;
+            font-size: 30px;
+          }
+
+          button{
+            background-color: #4049aa;
+            width: 80%;
+            color: white;
+            font-size: 34px;
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            margin: 0 auto;
           }
       }
       
+  }
+
+  footer {
+    div:nth-child(1){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+                "logo logo"
+                "company product"
+                "resources extras";
+
+      font-size: 36px;
+
+      ul:nth-child(2){
+        @include footer-link-list();
+      }
+
+      ul:nth-child(3){
+        grid-area: product;
+        @include footer-link-list();
+      }
+
+      ul:nth-child(4){
+        grid-area: resources;
+        @include footer-link-list();
+      }
+
+      ul:nth-child(5){
+        grid-area: extras;
+        @include footer-link-list();
+      }
+
+      img{
+        grid-area: logo;
+      }
+    }
+
+    div:nth-child(2){
+      list-style-type: none;
+      background-color: #f5f5f5;
+      text-align: center;
+
+      padding-bottom: 10px;
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 19px;
+        list-style-type: none;
+      }
+
+      li{
+        font-size: 27px;
+        font-weight: bold;
+        color: #6d6f7a;
+      }
+
+      div{
+
+        div:nth-child(1){
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: center;
+          align-content: baseline;
+
+          img {
+            width: 40px;
+          }
+
+          span{
+            color: #6d6f7a;
+            margin-left: 24px;
+          }
+
+          i{
+            color: #6d6f7a;
+            margin-left: 24px;
+          }
+        }
+
+        div {
+          div:nth-child(2){
+            color: #6d6f7a;
+
+            i{
+              font-size: 46px;
+              margin: 10px 14px;
+            }
+          }
+        }
+      }
+
+    }
+
   }
 
 }
