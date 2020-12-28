@@ -1,0 +1,243 @@
+body {
+  font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+}
+body nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "slack-logo burguer-menu";
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-bottom: solid 1px #ebebeb;
+}
+body nav img {
+  width: 150px;
+  grid-area: slack-logo;
+}
+body nav ul {
+  display: none;
+}
+body nav .fas.fa-bars {
+  font-size: 53px;
+  text-align: right;
+  grid-area: burguer-menu;
+  color: #6d6f7a;
+}
+body nav .fas.fa-times {
+  display: none;
+}
+body header {
+  padding-left: 30px;
+}
+body header h1 {
+  font-size: 8.5vw;
+  width: 400px;
+}
+body header p:nth-child(2) {
+  width: 600px;
+  font-size: 4.02vw;
+  color: #6d6f7a;
+}
+body header input {
+  display: block;
+  width: 600px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 3.5vw;
+  border: solid 1px #ebebeb;
+}
+body header button {
+  background: #4049aa;
+  margin: 0 auto;
+  width: 80%;
+  height: 70px;
+  color: white;
+  width: 600px;
+  height: 60px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 3.5vw;
+  border: none;
+}
+body header p:nth-child(5) {
+  text-align: center;
+  padding-right: 99px;
+  color: #6d6f7a;
+}
+body header img {
+  margin-top: 30px;
+}
+body main {
+  background-color: #f5f5f5;
+}
+body main div:nth-child(1) {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+body main div:nth-child(1) h2 {
+  text-align: center;
+  font-size: 6vw;
+  margin-bottom: 23px;
+}
+body main div:nth-child(1) p {
+  text-align: center;
+  width: 70%;
+  font-size: 4vw;
+  margin: 0 auto;
+  color: #6d6f7a;
+}
+body main div:nth-child(1) button {
+  background: white;
+  margin: 0 auto;
+  width: 80%;
+  height: 70px;
+  color: white;
+  width: 600px;
+  height: 60px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 3.5vw;
+  border: none;
+  border: solid 1px #4049aa;
+  color: #4049aa;
+}
+body main div:nth-child(1) img {
+  width: 300px;
+  margin: 0 auto;
+  padding: 40px;
+  border-bottom: solid 1px #ebebeb;
+}
+body main div:nth-child(1) img:nth-child(4) {
+  margin-top: 55px;
+}
+body main div:nth-child(2) {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-bottom: solid 1px #ebebeb;
+}
+body main div:nth-child(2) p:nth-child(1) {
+  text-align: center;
+  font-weight: bold;
+  font-size: 5vw;
+  padding-top: 70px;
+  margin-bottom: 5px;
+}
+body main div:nth-child(2) p:nth-child(2) {
+  text-align: center;
+}
+body main div:nth-child(2) button {
+  background: #4049aa;
+  margin: 0 auto;
+  width: 80%;
+  height: 70px;
+  color: white;
+  width: 600px;
+  height: 60px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 3.5vw;
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+}
+body footer div:nth-child(1) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "slack-logo slack-logo" "company product" "resources extras";
+  font-size: 5vw;
+}
+body footer div:nth-child(1) ul {
+  list-style: none;
+}
+body footer div:nth-child(1) ul li {
+  margin: 0 0 22px 0;
+  color: #6d6f7a;
+}
+body footer div:nth-child(1) img {
+  grid-area: slack-logo;
+}
+body footer div:nth-child(1) ul:nth-child(2) {
+  grid-area: company;
+}
+body footer div:nth-child(1) ul:nth-child(2) li:nth-child(1) {
+  font-weight: bold;
+  color: #6d6f7a;
+}
+body footer div:nth-child(1) ul:nth-child(3) {
+  grid-area: product;
+}
+body footer div:nth-child(1) ul:nth-child(3) li:nth-child(1) {
+  font-weight: bold;
+  color: grey;
+}
+body footer div:nth-child(1) ul:nth-child(4) {
+  grid-area: resources;
+}
+body footer div:nth-child(1) ul:nth-child(4) li:nth-child(1) {
+  font-weight: bold;
+  color: grey;
+}
+body footer div:nth-child(1) ul:nth-child(5) {
+  grid-area: extras;
+}
+body footer div:nth-child(1) ul:nth-child(5) li:nth-child(1) {
+  font-weight: bold;
+  color: grey;
+}
+body footer div:nth-child(2) {
+  background-color: #f5f5f5;
+}
+body footer div:nth-child(2) ul {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #6d6f7a;
+  font-size: 3vw;
+  padding-top: 29px;
+  margin-bottom: 30px;
+}
+body footer div:nth-child(2) ul li {
+  display: inline;
+  margin: 0 20px;
+}
+body footer div:nth-child(2) div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 107px 1fr;
+  grid-template-areas: "flag language arrow-down" "twitter facebook youtube";
+  justify-items: center;
+  color: #6d6f7a;
+}
+body footer div:nth-child(2) div img {
+  grid-area: flag;
+  width: 25px;
+  justify-self: end;
+  margin-right: 9px;
+}
+body footer div:nth-child(2) div span {
+  grid-area: language;
+  place-self: center;
+}
+body footer div:nth-child(2) div i.fas.fa-chevron-down {
+  grid-area: arrow-down;
+  justify-self: start;
+}
+body footer div:nth-child(2) div i.fab.fa-twitter {
+  grid-area: twitter;
+  justify-self: end;
+  margin-top: 30px;
+}
+body footer div:nth-child(2) div i.fab.fa-facebook-f {
+  grid-area: facebook;
+  margin-top: 30px;
+}
+body footer div:nth-child(2) div i.fab.fa-youtube {
+  grid-area: youtube;
+  justify-self: start;
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=stylec.css.map */

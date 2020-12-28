@@ -1,0 +1,291 @@
+// Colores
+$main-grey: #6d6f7a;
+$border-color: #ebebeb;
+$purple: #4049aa;
+$backgroundColor-grey: #f5f5f5;
+
+// Paddings 
+@mixin default-padding {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+// Boton
+@mixin button ($bkColor){
+    background: $bkColor;
+    margin: 0 auto;
+    width: 80%;
+    height: 70px;
+    color: white;
+    width: 600px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 3.5vw;
+    border: none;
+}
+
+body{
+
+    //font-family: 'Roboto', sans-serif;
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "slack-logo burguer-menu";
+
+        position: sticky;
+        top: 0;
+        background-color: white;
+
+        @include default-padding();
+
+        border-bottom: solid 1px $border-color;
+
+        img{
+            width: 150px;
+            grid-area: slack-logo;
+        }
+
+        ul{
+            display: none;
+        }
+
+        .fas.fa-bars {
+            font-size: 53px;
+            text-align: right;
+            grid-area: burguer-menu;
+            color: $main-grey;
+        }
+
+        .fas.fa-times {
+            display: none;
+        }
+    }
+
+    header{
+        padding-left: 30px;
+
+        h1{
+            font-size: 8.5vw;
+            width: 400px;
+        }
+
+        p:nth-child(2){
+            width: 600px;
+            font-size: 4.02vw;
+            color: $main-grey;
+        }
+
+        input{
+            display: block;
+            width: 600px;
+            height: 60px;
+            border-radius: 5px;
+            font-size: 3.5vw;
+            border: solid 1px $border-color
+        }
+
+        button{
+            @include button($purple);
+        }
+
+        p:nth-child(5){
+            text-align: center;
+            padding-right: 99px;
+            color: $main-grey;
+        }
+
+        img{
+            margin-top: 30px;
+        }
+    }
+
+    main{
+        background-color: $backgroundColor-grey;
+
+        div:nth-child(1){
+            display: grid;
+            grid-template-columns: 1fr;
+
+            h2{
+                text-align: center;
+                font-size: 6vw;
+                margin-bottom: 23px;
+            }
+
+            p {
+                text-align: center;
+                width: 70%;
+                font-size: 4vw;
+                margin: 0 auto;
+                color: $main-grey
+            }
+
+            button{
+                @include button(white);
+                border: solid 1px $purple;
+                color: $purple;
+            }
+
+            img{
+                width: 300px;
+                margin: 0 auto;
+                padding: 40px;
+                border-bottom: solid 1px $border-color;
+            }
+
+            img:nth-child(4){
+                margin-top: 55px;
+            }
+        }
+
+        div:nth-child(2){
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr;
+
+            border-bottom: solid 1px $border-color;
+
+            p:nth-child(1){
+                text-align: center;
+                font-weight: bold;
+                font-size: 5vw;
+                padding-top: 70px;
+                margin-bottom: 5px;
+            }
+
+            p:nth-child(2){
+                text-align: center;
+            }
+
+            button{
+                @include button($purple);
+                color: white;
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+    footer{
+
+        div:nth-child(1){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "slack-logo slack-logo" "company product" "resources extras";
+
+            font-size: 5vw;
+
+            ul{
+                list-style: none;
+                li{
+                    margin: 0 0 22px 0;
+                    color: $main-grey;
+                }
+            }
+
+            img{
+                grid-area: slack-logo;
+            }
+
+            ul:nth-child(2) {
+                grid-area: company;
+                li:nth-child(1) {
+                    font-weight: bold;
+                    color: $main-grey;
+                }
+            }
+
+            ul:nth-child(3) {
+                grid-area: product;
+                li:nth-child(1) {
+                    font-weight: bold;
+                    color: grey;
+                }
+            }
+
+            ul:nth-child(4) {
+                grid-area: resources;
+                li:nth-child(1) {
+                    font-weight: bold;
+                    color: grey;
+                }
+            }
+
+            ul:nth-child(5) {
+                grid-area: extras;
+                li:nth-child(1) {
+                    font-weight: bold;
+                    color: grey;
+                }
+            }
+        }
+
+        div:nth-child(2){
+            background-color: $backgroundColor-grey;
+
+            ul{
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                color: $main-grey;
+                font-size: 3vw;
+                padding-top: 29px;
+                margin-bottom: 30px;
+
+                li{
+                    display: inline;
+                    margin: 0 20px;
+                }
+            }
+
+            div {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 107px 1fr;
+                grid-template-areas: "flag language arrow-down" "twitter facebook youtube";
+                justify-items: center;
+                color: $main-grey;
+
+                img{
+                    grid-area: flag;
+                    width: 25px;
+                    justify-self: end;
+                    margin-right: 9px;
+                }
+
+                span {
+                    grid-area: language;
+                    place-self: center;
+                }
+
+                i.fas.fa-chevron-down {
+                    grid-area: arrow-down;
+                    justify-self: start;
+                }
+
+                i.fab.fa-twitter {
+                    grid-area: twitter;
+                    justify-self: end;
+                    margin-top: 30px;
+                }
+
+                i.fab.fa-facebook-f {
+                    grid-area: facebook;
+                    margin-top: 30px;
+                }
+
+                i.fab.fa-youtube {
+                    grid-area: youtube;
+                    justify-self: start;
+                    margin-top: 30px;
+                }
+
+
+            }
+        }
+
+    }
+}

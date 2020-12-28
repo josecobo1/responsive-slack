@@ -3,6 +3,7 @@
   color: #6d6f7a;
 }
 
+
 body {
   nav {
     display: flex;
@@ -193,4 +194,12 @@ body {
 
   }
 
+}
+
+
+// Iteración 2 | Small Screen (961px > width > 767px)
+@media (min-width: 767px) and (max-width: 961px){
+  body{
+    
+  }
 }
