@@ -27,8 +27,11 @@ $backgroundColor-grey: #f5f5f5;
 
 body {
   //font-family: 'Roboto', sans-serif;
-  font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
-    Arial, sans-serif;
+  font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+  
+  max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
 
   nav {
     display: grid;
@@ -287,7 +290,205 @@ body {
 
 // Iteración 4 | Large Screen (width > 1200px)
 @media (min-width: 1025px){
+    body{
+        nav{
+            grid-template-areas: "slack-logo menu";
+            .fas.fa-bars{
+                display: none;
+            }
+
+            ul{
+                list-style-type: none;
+                justify-self: end;
+                display: block;
+                grid-area: menu;
+
+                li{
+                    display: inline;
+                    margin-left: 10px;
+                    padding: 8px;
+                }
+
+                li:nth-child(4) {
+                    border: solid 1px $main-grey;
+                }
+            }
+        }
+
+        header{
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            // grid-template-rows: 4fr 4fr 2fr 1fr;
+
+            h1{
+                grid-column: 2;
+                grid-row: 1;
+                font-size: 5.5vw;
+            }
+
+            p:nth-child(2){
+                grid-column: 2;
+                grid-row: 2;
+                font-size: 2.02vw;
+                overflow-wrap: break-word;
+                font-size: fit-width;
+                width: 100%;
+            }
+
+            input{
+                grid-column: 2;
+                grid-row: 3;
+                width: 80%;
+                height: 40px;
+                font-size: 2.5vw;
+            }
+            
+            button{
+                grid-column: 2;
+                grid-row: 4;
+                width: 61%;
+                height: 40px;
+                font-size: 2.5vw;
+                margin: 0;
+            }
+
+            p:nth-child(5){
+                grid-column: 2;
+                grid-row: 5;
+            }
+
+            img{
+                grid-column: 1;
+                grid-row: 1 / span 4;
+            }
+        }
+
+        main {
+            div:nth-child(1) {
+              grid-template-columns: repeat(3, 1fr);
+              grid-template-areas: "title title title" "paragraph paragraph paragraph" "button button button" "airbnb capital-one hardvard" "angeles oracle ticketmaster";
     
+              h2 {
+                grid-area: title;
+                font-size: 5vw;
+              }
+      
+              p {
+                grid-area: paragraph;
+                font-size: 1.6vw;
+              }
+      
+              button {
+                grid-area: button;
+                margin-bottom: 31px;
+                margin-top: 30px;
+                font-size: 2.5vw;
+                width: 24%;
+              }
+    
+              img{
+                  width: 200px;
+              }
+      
+              img:nth-child(4) {
+                grid-area: airbnb;
+                margin-top: 0px;
+              }
+      
+              img:nth-child(5) {
+                grid-area: capital-one;
+              }
+      
+              img:nth-child(6) {
+                grid-area: hardvard;
+              }
+      
+              img:nth-child(7) {
+                grid-area: angeles;
+              }
+      
+              img:nth-child(8) {
+                grid-area: oracle;
+              }
+      
+              img:nth-child(9) {
+                grid-area: ticketmaster;
+              }
+            }
+          }
+
+          footer {
+            div:nth-child(1) {
+              grid-template-columns: 110px 1fr 1fr 1fr 1fr;
+              grid-template-areas: "slack-logo company product resources extras";
+      
+              img {
+                width: 110px;
+              }
+      
+              ul {
+                font-size: 2.4vw;
+              }
+            }
+      
+            div:nth-child(2) {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-areas: "status language";
+      
+              ul {
+                font-size: 2vw;
+                grid-area: status;
+      
+                li {
+                  margin: 0 10px;
+                }
+              }
+      
+              div {
+                grid-area: language;
+                display: grid;
+                grid-template-areas: "flag language arrow-down twitter youtube facebook";
+                grid-template-columns: 30px 107px 23px 23px 23px 23px;
+                justify-self: end;
+                padding-right: 50px;
+      
+                img {
+                  align-self: center;
+                }
+      
+                span {
+                  align-self: center;
+                }
+      
+                i.fab.fa-twitter {
+                  align-self: center;
+                  margin-top: 0px;
+                }
+      
+                i.fab.fa-youtube {
+                  align-self: center;
+                  margin-top: 0px;
+                }
+      
+                i.fab.fa-facebook-f {
+                  align-self: center;
+                  margin-top: 0px;
+                }
+      
+                i.fas.fa-chevron-down {
+                  align-self: center;
+                }
+              }
+            }
+          }
+    }
+
+    body{
+        header{
+            max-width: 1200px;
+        }
+    }
 }
 
 // Iteración 3 | Medium Screen (1024px > width > 960px)
@@ -343,6 +544,72 @@ body {
   
           img:nth-child(9) {
             grid-area: ticketmaster;
+          }
+        }
+      }
+
+      footer {
+        div:nth-child(1) {
+          grid-template-columns: 110px 1fr 1fr 1fr 1fr;
+          grid-template-areas: "slack-logo company product resources extras";
+  
+          img {
+            width: 110px;
+          }
+  
+          ul {
+            font-size: 2.4vw;
+          }
+        }
+  
+        div:nth-child(2) {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas: "status language";
+  
+          ul {
+            font-size: 2vw;
+            grid-area: status;
+  
+            li {
+              margin: 0 10px;
+            }
+          }
+  
+          div {
+            grid-area: language;
+            display: grid;
+            grid-template-areas: "flag language arrow-down twitter youtube facebook";
+            grid-template-columns: 30px 107px 23px 23px 23px 23px;
+            justify-self: end;
+            padding-right: 50px;
+  
+            img {
+              align-self: center;
+            }
+  
+            span {
+              align-self: center;
+            }
+  
+            i.fab.fa-twitter {
+              align-self: center;
+              margin-top: 0px;
+            }
+  
+            i.fab.fa-youtube {
+              align-self: center;
+              margin-top: 0px;
+            }
+  
+            i.fab.fa-facebook-f {
+              align-self: center;
+              margin-top: 0px;
+            }
+  
+            i.fas.fa-chevron-down {
+              align-self: center;
+            }
           }
         }
       }
