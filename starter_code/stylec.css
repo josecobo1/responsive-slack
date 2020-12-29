@@ -240,4 +240,141 @@ body footer div:nth-child(2) div i.fab.fa-youtube {
   margin-top: 30px;
 }
 
+@media (min-width: 767px) and (max-width: 961px) {
+  body header h1 {
+    width: 850px;
+  }
+  body header p:nth-child(2) {
+    width: 850px;
+    font-size: 2.6vw;
+  }
+  body header input {
+    display: inline;
+    width: 40%;
+  }
+  body header button {
+    width: 30%;
+    display: inline;
+    margin-left: 20px;
+  }
+  body header img {
+    width: 60%;
+    margin: 30px auto;
+    display: block;
+  }
+  body main div:nth-child(1) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "paragraph paragraph" "button button" "airbnb capital-one" "hardvard angeles" "oracle ticketmaster";
+  }
+  body main div:nth-child(1) h2 {
+    grid-area: title;
+    font-size: 5vw;
+  }
+  body main div:nth-child(1) p {
+    grid-area: paragraph;
+    font-size: 1.6vw;
+  }
+  body main div:nth-child(1) button {
+    grid-area: button;
+    margin-bottom: 31px;
+    margin-top: 30px;
+    font-size: 2.5vw;
+    width: 24%;
+  }
+  body main div:nth-child(1) img:nth-child(4) {
+    grid-area: airbnb;
+    margin-top: 0px;
+  }
+  body main div:nth-child(1) img:nth-child(5) {
+    grid-area: capital-one;
+  }
+  body main div:nth-child(1) img:nth-child(6) {
+    grid-area: hardvard;
+  }
+  body main div:nth-child(1) img:nth-child(7) {
+    grid-area: angeles;
+  }
+  body main div:nth-child(1) img:nth-child(8) {
+    grid-area: oracle;
+  }
+  body main div:nth-child(1) img:nth-child(9) {
+    grid-area: ticketmaster;
+  }
+  body main div:nth-child(2) {
+    grid-template-columns: 213px;
+    grid-template-areas: "title button" "paragraph .";
+    padding: 30px;
+  }
+  body main div:nth-child(2) p:nth-child(1) {
+    font-size: 3vw;
+    grid-area: title;
+    padding-top: 0;
+    margin-bottom: 0;
+    text-align: inherit;
+  }
+  body main div:nth-child(2) p:nth-child(2) {
+    grid-area: paragraph;
+  }
+  body main div:nth-child(2) button {
+    width: 283px;
+    height: 40px;
+    font-size: 2.2vw;
+    grid-area: button;
+    justify-self: end;
+    margin: 0;
+    align-self: end;
+  }
+  body footer div:nth-child(1) {
+    grid-template-columns: 110px 1fr 1fr 1fr 1fr;
+    grid-template-areas: "slack-logo company product resources extras";
+  }
+  body footer div:nth-child(1) img {
+    width: 110px;
+  }
+  body footer div:nth-child(1) ul {
+    font-size: 2.4vw;
+  }
+  body footer div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "status language";
+  }
+  body footer div:nth-child(2) ul {
+    font-size: 2vw;
+    grid-area: status;
+  }
+  body footer div:nth-child(2) ul li {
+    margin: 0 10px;
+  }
+  body footer div:nth-child(2) div {
+    grid-area: language;
+    display: grid;
+    grid-template-areas: "flag language arrow-down twitter youtube facebook";
+    grid-template-columns: 30px 107px 23px 23px 23px 23px;
+    justify-self: end;
+    padding-right: 50px;
+  }
+  body footer div:nth-child(2) div img {
+    align-self: center;
+  }
+  body footer div:nth-child(2) div span {
+    align-self: center;
+  }
+  body footer div:nth-child(2) div i.fab.fa-twitter {
+    align-self: center;
+    margin-top: 0px;
+  }
+  body footer div:nth-child(2) div i.fab.fa-youtube {
+    align-self: center;
+    margin-top: 0px;
+  }
+  body footer div:nth-child(2) div i.fab.fa-facebook-f {
+    align-self: center;
+    margin-top: 0px;
+  }
+  body footer div:nth-child(2) div i.fas.fa-chevron-down {
+    align-self: center;
+  }
+}
+
 /*# sourceMappingURL=stylec.css.map */

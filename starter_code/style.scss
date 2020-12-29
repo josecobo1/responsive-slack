@@ -289,3 +289,184 @@ body{
 
     }
 }
+
+// Iteración 2 | Small Screen (961px > width > 767px)
+@media (min-width: 767px) and (max-width: 961px){
+    body{
+      
+        header{
+            
+            h1{
+                width: 850px;
+            }
+
+            p:nth-child(2){
+                width: 850px;
+                font-size: 2.6vw;
+            }
+
+            input {
+                display: inline;
+                width: 40%;
+            }
+
+            button {
+                width: 30%;
+                display: inline;
+                margin-left: 20px;
+            }
+
+            img{
+                width: 60%;
+                margin: 30px auto;
+                display: block;
+            }
+        }
+
+        main{
+
+            div:nth-child(1){
+
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "title title" "paragraph paragraph" "button button" "airbnb capital-one" "hardvard angeles" "oracle ticketmaster";
+
+                h2 {
+                    grid-area: title;
+                    font-size: 5vw;
+                }
+
+                p {
+                    grid-area: paragraph;
+                    font-size: 1.6vw;
+                }
+
+                button {
+                    grid-area: button;
+                    margin-bottom: 31px;
+                    margin-top: 30px;
+                    font-size: 2.5vw;
+                    width: 24%;
+                }
+
+                img:nth-child(4) {
+                    grid-area: airbnb;
+                    margin-top: 0px;
+                }
+
+                img:nth-child(5) {
+                    grid-area: capital-one;
+                }
+
+                img:nth-child(6) {
+                    grid-area: hardvard;
+                    }
+
+                img:nth-child(7) {
+                    grid-area: angeles;
+                }
+
+                img:nth-child(8) {
+                    grid-area: oracle;
+                }
+
+                img:nth-child(9) {
+                    grid-area: ticketmaster;
+                }
+            }
+
+            div:nth-child(2){
+                grid-template-columns: 213px;
+                grid-template-areas: "title button" "paragraph .";
+                padding: 30px;
+
+                p:nth-child(1){
+                    font-size: 3vw;
+                    grid-area: title;
+                    padding-top: 0;
+                    margin-bottom: 0;
+                    text-align: inherit;
+                }
+
+                p:nth-child(2){
+                    grid-area: paragraph;
+                }
+
+                button{
+                    width: 283px;
+                    height: 40px;
+                    font-size: 2.2vw;
+                    grid-area: button;
+                    justify-self: end;
+                    margin: 0;
+                    align-self: end;
+                }
+            }
+        }
+
+        footer{
+            div:nth-child(1){
+                grid-template-columns: 110px 1fr 1fr 1fr 1fr;
+                grid-template-areas: "slack-logo company product resources extras";
+
+                img{
+                    width: 110px;
+                }
+
+                ul{
+                    font-size: 2.4vw;
+                }
+            }
+
+            div:nth-child(2){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "status language";
+                
+                ul{
+                    font-size: 2vw;
+                    grid-area: status;
+
+                    li{
+                        margin: 0 10px;
+                    }
+                }   
+
+                div{
+                    grid-area: language;
+                    display: grid;
+                    grid-template-areas: "flag language arrow-down twitter youtube facebook";
+                    grid-template-columns: 30px 107px 23px 23px 23px 23px;
+                    justify-self: end;
+                    padding-right: 50px;
+
+                    img {
+                        align-self: center;
+                    }
+
+                    span{
+                        align-self: center;
+                    }
+
+                    i.fab.fa-twitter{
+                        align-self: center;
+                        margin-top: 0px;
+                    }
+
+                    i.fab.fa-youtube{
+                        align-self: center;
+                        margin-top: 0px;
+                    }
+
+                    i.fab.fa-facebook-f{
+                        align-self: center;
+                        margin-top: 0px;
+                    }
+
+                    i.fas.fa-chevron-down {
+                        align-self: center;
+                    }
+                }
+        }
+    }
+  }
+}
