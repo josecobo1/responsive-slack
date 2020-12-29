@@ -1,6 +1,5 @@
 body {
   font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
-  max-width: 100%;
   overflow-x: hidden;
   margin: 0;
 }
@@ -336,6 +335,9 @@ body footer div:nth-child(2) div i.fab.fa-youtube {
     margin-top: 30px;
     font-size: 2.5vw;
     width: 24%;
+    font-size: 1.5vw;
+    width: 200px;
+    height: 60px;
   }
   body main div:nth-child(1) img {
     width: 200px;
@@ -359,6 +361,14 @@ body footer div:nth-child(2) div i.fab.fa-youtube {
   body main div:nth-child(1) img:nth-child(9) {
     grid-area: ticketmaster;
   }
+  body main div:nth-child(2) p:nth-child(1) {
+    font-size: 3.5vw;
+  }
+  body main div:nth-child(2) button {
+    width: 200px;
+    font-size: 1.5vw;
+    margin-bottom: 55px;
+  }
   body footer div:nth-child(1) {
     grid-template-columns: 110px 1fr 1fr 1fr 1fr;
     grid-template-areas: "slack-logo company product resources extras";
@@ -367,7 +377,7 @@ body footer div:nth-child(2) div i.fab.fa-youtube {
     width: 110px;
   }
   body footer div:nth-child(1) ul {
-    font-size: 2.4vw;
+    font-size: 1.3vw;
   }
   body footer div:nth-child(2) {
     display: grid;
@@ -377,6 +387,8 @@ body footer div:nth-child(2) div i.fab.fa-youtube {
   body footer div:nth-child(2) ul {
     font-size: 2vw;
     grid-area: status;
+    font-size: 1.5vw;
+    font-weight: normal;
   }
   body footer div:nth-child(2) ul li {
     margin: 0 10px;
@@ -409,10 +421,6 @@ body footer div:nth-child(2) div i.fab.fa-youtube {
   }
   body footer div:nth-child(2) div i.fas.fa-chevron-down {
     align-self: center;
-  }
-
-  body header {
-    max-width: 1200px;
   }
 }
 @media (min-width: 960px) and (max-width: 1024px) {

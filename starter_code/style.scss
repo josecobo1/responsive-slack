@@ -29,7 +29,7 @@ body {
   //font-family: 'Roboto', sans-serif;
   font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
   
-  max-width: 100%;
+  
     overflow-x: hidden;
     margin: 0;
 
@@ -397,6 +397,9 @@ body {
                 margin-top: 30px;
                 font-size: 2.5vw;
                 width: 24%;
+                font-size: 1.5vw;
+                width: 200px;
+                height: 60px;
               }
     
               img{
@@ -428,6 +431,18 @@ body {
                 grid-area: ticketmaster;
               }
             }
+
+            div:nth-child(2){
+              p:nth-child(1){
+                font-size: 3.5vw;
+              }
+
+              button{
+                width: 200px;
+                font-size: 1.5vw;
+                margin-bottom: 55px;
+                }
+            }
           }
 
           footer {
@@ -440,7 +455,7 @@ body {
               }
       
               ul {
-                font-size: 2.4vw;
+                font-size: 1.3vw;
               }
             }
       
@@ -452,11 +467,15 @@ body {
               ul {
                 font-size: 2vw;
                 grid-area: status;
+                font-size: 1.5vw;
+                font-weight: normal;
       
                 li {
                   margin: 0 10px;
                 }
               }
+
+              
       
               div {
                 grid-area: language;
@@ -497,11 +516,7 @@ body {
           }
     }
 
-    body{
-        header{
-            max-width: 1200px;
-        }
-    }
+     
 }
 
 // Iteración 3 | Medium Screen (1024px > width > 960px)
