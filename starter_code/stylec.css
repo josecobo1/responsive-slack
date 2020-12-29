@@ -240,6 +240,49 @@ body footer div:nth-child(2) div i.fab.fa-youtube {
   margin-top: 30px;
 }
 
+@media (min-width: 960px) and (max-width: 1024px) {
+  body main div:nth-child(1) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "title title title" "paragraph paragraph paragraph" "button button button" "airbnb capital-one hardvard" "angeles oracle ticketmaster";
+  }
+  body main div:nth-child(1) h2 {
+    grid-area: title;
+    font-size: 5vw;
+  }
+  body main div:nth-child(1) p {
+    grid-area: paragraph;
+    font-size: 1.6vw;
+  }
+  body main div:nth-child(1) button {
+    grid-area: button;
+    margin-bottom: 31px;
+    margin-top: 30px;
+    font-size: 2.5vw;
+    width: 24%;
+  }
+  body main div:nth-child(1) img {
+    width: 200px;
+  }
+  body main div:nth-child(1) img:nth-child(4) {
+    grid-area: airbnb;
+    margin-top: 0px;
+  }
+  body main div:nth-child(1) img:nth-child(5) {
+    grid-area: capital-one;
+  }
+  body main div:nth-child(1) img:nth-child(6) {
+    grid-area: hardvard;
+  }
+  body main div:nth-child(1) img:nth-child(7) {
+    grid-area: angeles;
+  }
+  body main div:nth-child(1) img:nth-child(8) {
+    grid-area: oracle;
+  }
+  body main div:nth-child(1) img:nth-child(9) {
+    grid-area: ticketmaster;
+  }
+}
 @media (min-width: 767px) and (max-width: 961px) {
   body header h1 {
     width: 850px;
