@@ -76,7 +76,7 @@ body {
     }
 
     p:nth-child(2) {
-      width: 600px;
+      min-width: 600px;
       font-size: 4.02vw;
       color: $main-grey;
     }
@@ -288,8 +288,9 @@ body {
   }
 }
 
+
 // Iteración 4 | Large Screen (width > 1200px)
-@media (min-width: 1025px){
+@media (min-width: 1024px){
     body{
         nav{
             grid-template-areas: "slack-logo menu";
@@ -358,6 +359,11 @@ body {
                 margin: 0;
                 grid-row: 3;
                 margin: 0;
+                font-size: 2.5vw;
+                width: 24%;
+                font-size: 1.5vw;
+                width: 200px;
+                height: 60px;
             }
 
             p:nth-child(5){
@@ -366,7 +372,7 @@ body {
                 text-align: left;
                 grid-row: 3;
                 text-align: left;
-                margin-top: 53px;
+                margin-top: 70px;
             }
 
             img{
