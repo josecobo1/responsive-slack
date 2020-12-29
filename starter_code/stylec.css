@@ -267,19 +267,21 @@ body footer div:nth-child(2) div i.fab.fa-youtube {
   body header {
     display: grid;
     grid-template-columns: 2fr 3fr;
+    grid-template-rows: 2fr 2fr 2fr 1fr;
+    height: 100vh;
   }
   body header h1 {
     grid-column: 2;
     grid-row: 1;
-    font-size: 5.5vw;
+    font-size: 4.5vw;
   }
   body header p:nth-child(2) {
     grid-column: 2;
     grid-row: 2;
-    font-size: 2.02vw;
     overflow-wrap: break-word;
     font-size: fit-width;
     width: 100%;
+    font-size: 1.7vw;
   }
   body header input {
     grid-column: 2;
@@ -287,22 +289,34 @@ body footer div:nth-child(2) div i.fab.fa-youtube {
     width: 80%;
     height: 40px;
     font-size: 2.5vw;
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+    display: none;
+    margin-top: -56px;
+    display: none;
   }
   body header button {
     grid-column: 2;
-    grid-row: 4;
+    grid-row: 3;
     width: 61%;
     height: 40px;
     font-size: 2.5vw;
     margin: 0;
+    grid-row: 3;
+    margin: 0;
   }
   body header p:nth-child(5) {
     grid-column: 2;
-    grid-row: 5;
+    grid-row: 4;
+    text-align: left;
+    grid-row: 3;
+    text-align: left;
+    margin-top: 53px;
   }
   body header img {
     grid-column: 1;
-    grid-row: 1/span 4;
+    grid-row: 1/span 5;
+    margin-top: 0;
   }
   body main div:nth-child(1) {
     grid-template-columns: repeat(3, 1fr);
