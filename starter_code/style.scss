@@ -321,11 +321,19 @@ body {
             grid-template-columns: 2fr 3fr;
             grid-template-rows: 2fr 2fr 2fr 1fr;
             height: 100vh;
+            // height: 75vh;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+            grid-auto-rows: auto;
+            grid-auto-rows: auto fit-content(50px) auto;
 
             h1{
                 grid-column: 2;
                 grid-row: 1;
                 font-size: 4.5vw;
+                font-size: 4vw;
+                max-width: 675px;
             }
 
             p:nth-child(2){
@@ -335,6 +343,10 @@ body {
                 font-size: fit-width;
                 width: 100%;
                 font-size: 1.7vw;
+                font-size: 1vw;
+                max-width: 400px;
+                font-size: 25px;
+                min-width: 10px;
             }
 
             input{
@@ -364,6 +376,7 @@ body {
                 font-size: 1.5vw;
                 width: 200px;
                 height: 60px;
+                font-size: 1vw;
             }
 
             p:nth-child(5){
@@ -372,12 +385,13 @@ body {
                 text-align: left;
                 grid-row: 3;
                 text-align: left;
-                margin-top: 70px;
+                grid-row: 4;
+                margin-top: -50px;
             }
 
             img{
                 grid-column: 1;
-                grid-row: 1/span 5;
+                grid-row: 1/span 4;
                 margin-top: 0;
             }
         }
@@ -386,15 +400,21 @@ body {
             div:nth-child(1) {
               grid-template-columns: repeat(3, 1fr);
               grid-template-areas: "title title title" "paragraph paragraph paragraph" "button button button" "airbnb capital-one hardvard" "angeles oracle ticketmaster";
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 25px;
+              padding-bottom: 20px;
     
               h2 {
                 grid-area: title;
                 font-size: 5vw;
+                font-size: 3vw;
               }
       
               p {
                 grid-area: paragraph;
                 font-size: 1.6vw;
+                font-size: 1.2vw;
               }
       
               button {
@@ -406,6 +426,7 @@ body {
                 font-size: 1.5vw;
                 width: 200px;
                 height: 60px;
+                font-size: 0.9vw;
               }
     
               img{
@@ -441,27 +462,31 @@ body {
             div:nth-child(2){
               p:nth-child(1){
                 font-size: 3.5vw;
+                font-size: 3vw;
               }
 
               button{
                 width: 200px;
                 font-size: 1.5vw;
                 margin-bottom: 55px;
+                font-size: 0.9vw;
                 }
             }
           }
 
           footer {
             div:nth-child(1) {
-              grid-template-columns: 110px 1fr 1fr 1fr 1fr;
+              grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
               grid-template-areas: "slack-logo company product resources extras";
       
               img {
                 width: 110px;
+                margin-left: 75px;
               }
       
               ul {
                 font-size: 1.3vw;
+                font-size: 1vw;
               }
             }
       
@@ -475,6 +500,7 @@ body {
                 grid-area: status;
                 font-size: 1.5vw;
                 font-weight: normal;
+                font-size: 1vw;
       
                 li {
                   margin: 0 10px;
